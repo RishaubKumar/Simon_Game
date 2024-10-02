@@ -12,7 +12,7 @@ document.addEventListener("keypress", function () {
     levelUp();
 });
 
-function btnflash(btn) {  // Accept the button element as an argument
+function btnflash(btn) {
     btn.classList.add("flash");
     setTimeout(function () {
         btn.classList.remove("flash");
@@ -22,16 +22,18 @@ function btnflash(btn) {  // Accept the button element as an argument
 function levelUp() {
     level++;
     h3.innerText = `Level ${level}`;
-    let randIdx = Math.floor(Math.random() * 4);  // Updated to handle all colors
+    let randIdx = Math.floor(Math.random() * 4);
     let randCol = btns[randIdx];
     let randbtn = document.querySelector(`.${randCol}`);
     gameSeq.push(randCol);
-    btnflash(randbtn);  // Pass the selected button element to btnflash
+    btnflash(randbtn);
 }
-function btnPress(){
-    let btn = this ;
+
+function btnPress() {
+    let btn = this;
     btnflash(btn);
 }
-for(btn of allbtns){
-    btn.addEventListener("click",btnPress);
+
+for (btn of allbtns) {
+    btn.addEventListener("click", btnPress);
 }

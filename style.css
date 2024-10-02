@@ -1,31 +1,109 @@
-body{
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    /* background-color:#121212; */
 }
-.btn{
+
+/* Container for Game and Instructions */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    padding: 2rem;
+}
+
+/* Game Section Styles */
+.game-section {
+    width: 40%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Instruction Section Styles */
+.instruction-section {
+    width: 40%;
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instruction-section h2 {
+    color: #444;
+}
+
+.instruction-section ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.instruction-section li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Button Styles */
+.btn {
     height: 8rem;
     width: 8rem;
-    border: 5px solid black;
+    border: none;
     border-radius: 20px;
     margin: 1rem;
-    
+    transition: transform 0.1s ease-in-out;
 }
-.line{
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.line {
     justify-content: center;
     display: flex;
 }
-.pink{
-    background-color: rgb(226, 38, 70);
+
+/* Color Adjustments */
+.pink {
+    background-color: #ff4d4d;
 }
-.blue{
-    background-color: blue;
+
+.blue {
+    background-color: #4d79ff;
 }
-.violet{
-    background-color: violet;
+
+.violet {
+    background-color: #cc99ff;
 }
-.orange{
-    background-color: orangered;
+
+.orange {
+    background-color: #ff944d;
 }
-.flash{
+
+.flash {
     background-color: white;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
 }

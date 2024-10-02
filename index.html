@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Simon Says Game</h1>
-    <h3>Press any key to  start the game</h3>
-    <div class="line">
-        <div class="btn pink" type ="button">1</div>
-        <div class="btn blue" type ="button">2</div>
+    <div class="container">
+        <div class="game-section">
+            <h1>Simon Says Game</h1>
+            <h3>Press any key to start the game</h3>
+            <div class="line">
+                <div class="btn pink" type="button">1</div>
+                <div class="btn blue" type="button">2</div>
+            </div>
+            <div class="line">
+                <div class="btn orange" type="button">3</div>
+                <div class="btn violet" type="button">4</div>
+            </div>
+        </div>
+
+        <div class="instruction-section">
+            <h2>How to Play</h2>
+            <ul>
+                <li>Press any key to start the game.</li>
+                <li>Follow the pattern of colors as they flash.</li>
+                <li>Each round adds a new color to the sequence.</li>
+                <li>Click the buttons in the correct order to progress.</li>
+                <li>If you click the wrong button, the game will restart.</li>
+            </ul>
+        </div>
     </div>
-    <div class="line">
-        <div class="btn orange" type ="button">3</div>
-        <div class="btn violet" type ="button">4</div>
-    </div>
+
+    <footer>
+        Created by Rishaub Kumar
+    </footer>
+
     <script src="app.js"></script>
 </body>
+
 </html>
